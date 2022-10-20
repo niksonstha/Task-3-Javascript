@@ -1,11 +1,8 @@
-function upper_lower(str) {
-  if (str.length < 3) {
-    return str.toUpperCase();
-  }
-  let front_part = str.substring(0, 3).toLowerCase();
-  let back_part = str.substring(3, str.length);
-  return front_part + back_part;
+function test50(x, y) {
+  return x == 50 || y == 50 || x + y == 50;
 }
-console.log(upper_lower("Nikson"));
-console.log(upper_lower("ni"));
-console.log(upper_lower("NIKson"));
+
+console.log(test50(20, 30));
+console.log(test50(10, 40));
+console.log(test50(60, 30));
+console.log(test50(50, 30));
