@@ -1,12 +1,9 @@
-let volume = () => {
+let volume = (r, h) => {
   let pi = Math.PI;
-  let r = 10;
-  let h = 200;
 
   let v = pi * r * r * h;
 
-  console.log(parseFloat(v.toFixed(4)));
   return v;
 };
 
-volume();
+console.log(volume(3, 4).toFixed(4));
